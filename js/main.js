@@ -11,20 +11,17 @@
     };
     spinner();
     
-    
     // Initiate the wowjs
     new WOW().init();
 
-
     // Sticky Navbar
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 0) {
-            $('.navbar').addClass('position-fixed bg-dark shadow-sm');
+        if ($(this).scrollTop() > 45) {
+            $('.navbar').addClass('position-fixed shadow-sm');
         } else {
-            $('.navbar').removeClass('position-fixed bg-dark shadow-sm');
+            $('.navbar').removeClass('position-fixed shadow-sm');
         }
     });
-    
     
     // Back to top button
     $(window).scroll(function () {
@@ -35,22 +32,26 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({scrollTop: 0}, 1200, 'easeInOutExpo');
         return false;
     });
 
-
     // Testimonials carousel
-    $('.testimonial-carousel').owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        loop: true,
-        nav: false,
-        dots: true,
-        items: 1,
-        dotsData: true,
-    });
+    if ($('.testimonial-carousel').length > 0) {
+        $('.testimonial-carousel').owlCarousel({
+            autoplay: true,
+            smartSpeed: 1000,
+            loop: true,
+            nav: false,
+            dots: true,
+            items: 1,
+            dotsData: true,
+        });
+    }
 
+    // Interactive riddle card toggle for touch/click
+    $('.riddle-card').on('click', function () {
+        $(this).find('.riddle-answer').slideToggle(250);
+    });
     
 })(jQuery);
-

@@ -1,431 +1,536 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <title>Poseify - Modeling Agency Website Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8" />
+    <title>製作過程 | 百「花」齊放 「燈」峰造極 - 傳統花燈六大工序解密</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="花燈製作, 花燈骨架, 裱糊工藝, 傳統工藝工序, 蕭在淦, 花燈紮作, 彩繪噴染" name="keywords" />
+    <meta content="解密一盞花燈誕生的六大絕活工序：草圖構思、立體紮骨、電器布線、緊繃裱布、彩繪噴染、動態試點，感受職人指尖淬鍊的登峰造極。" name="description" />
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/favicon.ico" rel="icon" />
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Work+Sans:wght@400;600&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
     <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
+    <div
+      id="spinner"
+      class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-grow text-primary"
+        style="width: 3.5rem; height: 3.5rem"
+        role="status"
+      >
+        <span class="sr-only">載入中...</span>
+      </div>
     </div>
     <!-- Spinner End -->
 
-
     <!-- Header Start -->
     <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg navbar-dark px-lg-5">
-            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-                <h2 class="mb-0 text-primary text-uppercase"><i class="fa-regular fa-face-smile me-1"></i>Poseify</h2>
-            </a>
-            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
-                data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav mx-auto p-4 p-lg-0">
-                    <a href="index.html" class="nav-item nav-link">主頁</a>
-                    <a href="about.html" class="nav-item nav-link active">製作過程</a>
-                    <a href="service.html" class="nav-item nav-link">商品&遊戲</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">花燈師傅</a>
-                        <div class="dropdown-menu m-0">
-                            <a href="team.html" class="dropdown-item">Our Models</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="404.html" class="dropdown-item">404 Page</a>
-                        </div>
-                    </div>
-                    <a href="contact.html" class="nav-item nav-link">關於我們</a>
-                </div>
-                <div class="d-none d-lg-flex">
-                    <a class="btn btn-outline-primary border-2" href="https://themewagon.com/themes/poseify">Download
-                        Now</a>
-                </div>
+      <nav class="navbar navbar-expand-lg navbar-dark px-lg-5">
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+          <h2 class="mb-0 text-primary">
+            <i class="fa-solid fa-fire-flame-curved me-2"></i>百「花」齊放 「燈」峰造極
+          </h2>
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler me-4"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-label="切換導航欄"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav mx-auto p-4 p-lg-0">
+            <a href="index.html" class="nav-item nav-link">花燈的歷史</a>
+            <a href="about.html" class="nav-item nav-link active">製作過程</a>
+            <a href="service.html" class="nav-item nav-link">商品&遊戲</a>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >燈藝世界</a
+              >
+              <div class="dropdown-menu m-0">
+                <a href="team.html" class="dropdown-item">花燈名師</a>
+                <a href="testimonial.html" class="dropdown-item">參觀迴響</a>
+                <a href="404.html" class="dropdown-item">尋燈秘境 (404)</a>
+              </div>
             </div>
-        </nav>
-
-        <div class="page-header pb-5">
-            <div class="container text-center py-5">
-                <h1 class="display-4 text-uppercase mb-3 animated slideInDown">製作過程</h1>
-                <nav aria-label="breadcrumb animated slideInDown">
-                    <ol class="breadcrumb justify-content-center text-uppercase mb-0">
-                        <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                        <li class="breadcrumb-item text-primary active" aria-current="page">About</li>
-                    </ol>
-                </nav>
-            </div>
+            <a href="contact.html" class="nav-item nav-link">關於我們</a>
+          </div>
+          <div class="d-none d-lg-flex">
+            <a
+              class="btn btn-primary px-4 py-2"
+              href="contact.html"
+              ><i class="fa-solid fa-paper-plane me-2"></i>預約導覽</a
+            >
+          </div>
         </div>
+      </nav>
+
+      <div class="page-header pb-5">
+        <div class="container text-center py-5">
+          <h1 class="display-4 text-white mb-3 animated slideInDown">花燈製作工藝</h1>
+          <nav aria-label="breadcrumb" class="animated slideInDown">
+            <ol class="breadcrumb justify-content-center text-uppercase mb-0">
+              <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+              <li class="breadcrumb-item text-primary active" aria-current="page">製作過程</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
     </div>
     <!-- Header End -->
 
-
-    <!-- About Start -->
-    <div class="container-fluid">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-7 pb-0 pb-lg-5 py-5">
-                    <div class="pb-0 pb-lg-5 py-5">
-                        <div class="title wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="title-left">
-                                <h5>History</h5>
-                                <h1>About Our Agency</h1>
-                            </div>
-                        </div>
-                        <p class="mb-4 wow fadeInUp" data-wow-delay="0.2s">Tempor erat elitr rebum at clita. Diam dolor
-                            diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
-                            lorem sit clita duo justo magna dolore erat amet. Stet no et lorem dolor et diam, amet duo
-                            ut dolore vero eos.</p>
-                        <ul class="list-group list-group-flush mb-5 wow fadeInUp" data-wow-delay="0.3s">
-                            <li class="list-group-item bg-dark text-body border-secondary ps-0">
-                                <i class="fa fa-check-circle text-primary me-1"></i> Lorem ipsum dolor sit amet
-                                consectetur elit.
-                            </li>
-                            <li class="list-group-item bg-dark text-body border-secondary ps-0">
-                                <i class="fa fa-check-circle text-primary me-1"></i> Donec vehicula, sem ut tempus
-                                tempus.
-                            </li>
-                            <li class="list-group-item bg-dark text-body border-secondary ps-0">
-                                <i class="fa fa-check-circle text-primary me-1"></i> Morbi mi dapibus, feugiat nisi non
-                                mollis justo.
-                            </li>
-                        </ul>
-                        <div class="row wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="col-6">
-                                <a href="#!" class="btn btn-outline-primary border-2 py-3 w-100">Become A Model</a>
-                            </div>
-                            <div class="col-6">
-                                <a href="#!" class="btn btn-primary py-3 w-100">Schedule Casting</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.5s">
-                    <img class="img-fluid" src="img/about.png" alt="">
-                </div>
+    <!-- About / Craft Overview Start -->
+    <div class="container-fluid bg-secondary py-5">
+      <div class="container py-5">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-7">
+            <div class="title wow fadeInUp" data-wow-delay="0.1s">
+              <div class="title-left">
+                <h5>MASTERING THE CRAFT</h5>
+                <h1>千錘百鍊 · 一盞花燈的極致誕生</h1>
+              </div>
             </div>
+            <p class="mb-4 text-light wow fadeInUp" data-wow-delay="0.2s">
+              花燈製作是結合雕塑美學、力學結構、材料科學與光學設計的綜合立體藝術。傳統花燈師傅常言：「骨要硬、皮要順、光要亮、色要神」。從一根原始竹篾或鐵絲開始，歷經繁複的手工彎折、精密的電氣布線、細緻的裱布與層次渲染，才能在黑夜中成就動人心魄的萬千姿態。
+            </p>
+            <ul class="list-group list-group-flush mb-5 wow fadeInUp" data-wow-delay="0.3s">
+              <li class="list-group-item bg-dark text-light border-secondary ps-0 py-3">
+                <i class="fa fa-ruler-combined text-primary me-2"></i>
+                <strong>骨架紮作（骨之魄）：</strong>傳統取韌性最佳之桂竹或軟鐵絲，運用徒手彎折與焊接技術，構築出花燈穩固立體的「筋骨」。
+              </li>
+              <li class="list-group-item bg-dark text-light border-secondary ps-0 py-3">
+                <i class="fa fa-bolt text-primary me-2"></i>
+                <strong>電氣安裝（光之源）：</strong>在密閉布套前完成全燈耐溫電線配置，均勻排布 LED 燈珠與防水迴路，確保透光均勻且安全無虞。
+              </li>
+              <li class="list-group-item bg-dark text-light border-secondary ps-0 py-3">
+                <i class="fa fa-brush text-primary me-2"></i>
+                <strong>裱糊與彩繪（色之韻）：</strong>選用高透光彈性布，手工上膠平整緊繃、絲毫不留皺摺，再以噴槍與畫筆賦予漸層光影與神韻細節。
+              </li>
+            </ul>
+            <div class="row g-3 wow fadeInUp" data-wow-delay="0.4s">
+              <div class="col-sm-6">
+                <a href="service.html" class="btn btn-primary py-3 w-100">
+                  <i class="fa-solid fa-gift me-2"></i>體驗 DIY 手作材料包
+                </a>
+              </div>
+              <div class="col-sm-6">
+                <a href="team.html" class="btn btn-outline-primary border-2 py-3 w-100">
+                  <i class="fa-solid fa-user-tie me-2"></i>拜訪傳承名師
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 text-center wow fadeInUp" data-wow-delay="0.5s">
+            <div class="position-relative d-inline-block">
+              <img class="img-fluid rounded-3 shadow-lg" src="img/about.png" alt="花燈工藝師紮作細節" style="max-height: 520px; object-fit: cover; border: 2px solid rgba(245, 158, 11, 0.3);" />
+              <div class="position-absolute bottom-0 start-50 translate-middle-x mb-3 w-75 bg-dark bg-opacity-75 p-3 rounded-pill border border-primary text-center">
+                <small class="text-primary fw-bold"><i class="fa-solid fa-medal me-1"></i> 指尖六大工序 · 登峰造極</small>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- About End -->
 
-
     <!-- Banner Start -->
-    <div class="container-fluid py-5 bg-secondary">
-        <div class="container py-5">
-            <div class="row g-0 justify-content-center">
-                <div class="col-lg-7 text-center">
-                    <div class="title mx-5 px-5 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="title-center">
-                            <h5>Casting</h5>
-                            <h1>Want to be a Model?</h1>
-                        </div>
-                    </div>
-                    <p class="fs-5 mb-5 wow fadeInUp" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Sed erat lectus, venenatis sit amet egestas eget, aliquet a nisl.</p>
-                    <div class="position-relative wow fadeInUp" data-wow-delay="0.3s">
-                        <input class="form-control border-0 bg-dark rounded-pill w-100 py-4 ps-4 pe-5" type="text"
-                            placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-3 px-4 position-absolute top-0 end-0 me-2"
-                            style="margin-top: 7px;">SignUp</button>
-                    </div>
-                </div>
+    <div class="container-fluid py-5 bg-dark">
+      <div class="container py-5">
+        <div class="row g-0 justify-content-center">
+          <div class="col-lg-8 text-center">
+            <div class="title mx-md-5 px-md-5 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="title-center">
+                <h5>HANDS-ON WORKSHOP</h5>
+                <h1>走進工坊 · 感受指尖燈火的溫度</h1>
+              </div>
             </div>
+            <p class="fs-5 mb-5 text-light wow fadeInUp" data-wow-delay="0.2s">
+              我們定期舉辦「一日花燈學徒體驗營」與校園巡迴工作坊，由國寶級燈藝師親自指導骨架塑形與裱糊技巧，親手點亮屬於自己的原創小花燈。
+            </p>
+            <div class="d-flex justify-content-center gap-3 wow fadeInUp" data-wow-delay="0.3s">
+              <a href="contact.html" class="btn btn-primary py-3 px-5">預約工坊體驗</a>
+              <a href="service.html" class="btn btn-outline-primary border-2 py-3 px-5">選購線上材料包</a>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Banner End -->
 
-
-    <!-- Team Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="text-center">
-                <div class="title wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="title-center">
-                        <h5>Models</h5>
-                        <h1>Meet Our Models</h1>
-                    </div>
-                </div>
+    <!-- 6 Major Crafting Stages (Original Team Component with Hover Effects) -->
+    <div class="container-fluid py-5 bg-secondary">
+      <div class="container py-5">
+        <div class="text-center">
+          <div class="title wow fadeInUp" data-wow-delay="0.1s">
+            <div class="title-center">
+              <h5>SIX STAGES OF PERFECTION</h5>
+              <h1>六大核心工法 · 淬鍊工藝指標</h1>
+              <p class="text-light mt-2">懸停卡片即可解鎖該道工序的材料規格與匠師專屬檢核標準</p>
             </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item">
-                        <div class="team-body">
-                            <div class="team-before">
-                                <span>Age</span>
-                                <span>Height</span>
-                                <span>Weight</span>
-                                <span>Bust</span>
-                                <span>Waist</span>
-                                <span>Hips</span>
-                            </div>
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
-                            <div class="team-after">
-                                <span>22</span>
-                                <span>185</span>
-                                <span>55</span>
-                                <span>79</span>
-                                <span>59</span>
-                                <span>89</span>
-                            </div>
-                        </div>
-                        <a class="team-name" href="#">
-                            <h5 class="text-uppercase mb-0">Naomy Olsen</h5>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item">
-                        <div class="team-body">
-                            <div class="team-before">
-                                <span>Age</span>
-                                <span>Height</span>
-                                <span>Weight</span>
-                                <span>Bust</span>
-                                <span>Waist</span>
-                                <span>Hips</span>
-                            </div>
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
-                            <div class="team-after">
-                                <span>22</span>
-                                <span>185</span>
-                                <span>55</span>
-                                <span>79</span>
-                                <span>59</span>
-                                <span>89</span>
-                            </div>
-                        </div>
-                        <a class="team-name" href="#">
-                            <h5 class="text-uppercase mb-0">Pamela Torney</h5>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item">
-                        <div class="team-body">
-                            <div class="team-before">
-                                <span>Age</span>
-                                <span>Height</span>
-                                <span>Weight</span>
-                                <span>Bust</span>
-                                <span>Waist</span>
-                                <span>Hips</span>
-                            </div>
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
-                            <div class="team-after">
-                                <span>22</span>
-                                <span>185</span>
-                                <span>55</span>
-                                <span>79</span>
-                                <span>59</span>
-                                <span>89</span>
-                            </div>
-                        </div>
-                        <a class="team-name" href="#">
-                            <h5 class="text-uppercase mb-0">Joanne Irwin</h5>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item">
-                        <div class="team-body">
-                            <div class="team-before">
-                                <span>Age</span>
-                                <span>Height</span>
-                                <span>Weight</span>
-                                <span>Bust</span>
-                                <span>Waist</span>
-                                <span>Hips</span>
-                            </div>
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
-                            <div class="team-after">
-                                <span>22</span>
-                                <span>185</span>
-                                <span>55</span>
-                                <span>79</span>
-                                <span>59</span>
-                                <span>89</span>
-                            </div>
-                        </div>
-                        <a class="team-name" href="#">
-                            <h5 class="text-uppercase mb-0">Gillian Rowe</h5>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item">
-                        <div class="team-body">
-                            <div class="team-before">
-                                <span>Age</span>
-                                <span>Height</span>
-                                <span>Weight</span>
-                                <span>Bust</span>
-                                <span>Waist</span>
-                                <span>Hips</span>
-                            </div>
-                            <img class="img-fluid" src="img/team-5.jpg" alt="">
-                            <div class="team-after">
-                                <span>22</span>
-                                <span>185</span>
-                                <span>55</span>
-                                <span>79</span>
-                                <span>59</span>
-                                <span>89</span>
-                            </div>
-                        </div>
-                        <a class="team-name" href="#">
-                            <h5 class="text-uppercase mb-0">Naomy Olsen</h5>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item">
-                        <div class="team-body">
-                            <div class="team-before">
-                                <span>Age</span>
-                                <span>Height</span>
-                                <span>Weight</span>
-                                <span>Bust</span>
-                                <span>Waist</span>
-                                <span>Hips</span>
-                            </div>
-                            <img class="img-fluid" src="img/team-6.jpg" alt="">
-                            <div class="team-after">
-                                <span>22</span>
-                                <span>185</span>
-                                <span>55</span>
-                                <span>79</span>
-                                <span>59</span>
-                                <span>89</span>
-                            </div>
-                        </div>
-                        <a class="team-name" href="#">
-                            <h5 class="text-uppercase mb-0">Pamela Torney</h5>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item">
-                        <div class="team-body">
-                            <div class="team-before">
-                                <span>Age</span>
-                                <span>Height</span>
-                                <span>Weight</span>
-                                <span>Bust</span>
-                                <span>Waist</span>
-                                <span>Hips</span>
-                            </div>
-                            <img class="img-fluid" src="img/team-7.jpg" alt="">
-                            <div class="team-after">
-                                <span>22</span>
-                                <span>185</span>
-                                <span>55</span>
-                                <span>79</span>
-                                <span>59</span>
-                                <span>89</span>
-                            </div>
-                        </div>
-                        <a class="team-name" href="#">
-                            <h5 class="text-uppercase mb-0">Joanne Irwin</h5>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item">
-                        <div class="team-body">
-                            <div class="team-before">
-                                <span>Age</span>
-                                <span>Height</span>
-                                <span>Weight</span>
-                                <span>Bust</span>
-                                <span>Waist</span>
-                                <span>Hips</span>
-                            </div>
-                            <img class="img-fluid" src="img/team-8.jpg" alt="">
-                            <div class="team-after">
-                                <span>22</span>
-                                <span>185</span>
-                                <span>55</span>
-                                <span>79</span>
-                                <span>59</span>
-                                <span>89</span>
-                            </div>
-                        </div>
-                        <a class="team-name" href="#">
-                            <h5 class="text-uppercase mb-0">Gillian Rowe</h5>
-                        </a>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
-    <!-- Team End -->
+        <div class="row g-4">
+          <!-- 工序 1 -->
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="team-item">
+              <div class="team-body">
+                <div class="team-before">
+                  <span>工序階段</span>
+                  <span>核心材料</span>
+                  <span>關鍵工法</span>
+                  <span>力學考量</span>
+                  <span>作業耗時</span>
+                  <span>品質標準</span>
+                </div>
+                <img class="img-fluid" src="img/team-1.jpg" alt="第一道工序：草圖構思與結構製圖" />
+                <div class="team-after">
+                  <span>壹 · 構思草圖</span>
+                  <span>格線紙、3D建模</span>
+                  <span>立體透視放樣</span>
+                  <span>重心與抗風受風面</span>
+                  <span>約 3-7 天</span>
+                  <span>比例均勻無死角</span>
+                </div>
+              </div>
+              <a class="team-name" href="#!">
+                <h5 class="text-uppercase mb-0">壹 · 草圖構思製圖</h5>
+                <small>力學平衡 · 空間立體定案</small>
+              </a>
+            </div>
+          </div>
 
+          <!-- 工序 2 -->
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="team-item">
+              <div class="team-body">
+                <div class="team-before">
+                  <span>工序階段</span>
+                  <span>核心材料</span>
+                  <span>關鍵工法</span>
+                  <span>強度測試</span>
+                  <span>作業耗時</span>
+                  <span>品質標準</span>
+                </div>
+                <img class="img-fluid" src="img/team-2.jpg" alt="第二道工序：骨架紮作與點焊塑形" />
+                <div class="team-after">
+                  <span>貳 · 骨架紮作</span>
+                  <span>黑鐵絲、彈簧鋼</span>
+                  <span>手工彎折點焊</span>
+                  <span>八級抗震抗風拉力</span>
+                  <span>約 10-25 天</span>
+                  <span>線條流暢骨力充沛</span>
+                </div>
+              </div>
+              <a class="team-name" href="#!">
+                <h5 class="text-uppercase mb-0">貳 · 骨架紮作點焊</h5>
+                <small>以鐵作骨 · 塑形立體體魄</small>
+              </a>
+            </div>
+          </div>
+
+          <!-- 工序 3 -->
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="team-item">
+              <div class="team-body">
+                <div class="team-before">
+                  <span>工序階段</span>
+                  <span>核心材料</span>
+                  <span>關鍵工法</span>
+                  <span>安全標準</span>
+                  <span>作業耗時</span>
+                  <span>品質標準</span>
+                </div>
+                <img class="img-fluid" src="img/team-3.jpg" alt="第三道工序：電氣回路與光點配置" />
+                <div class="team-after">
+                  <span>參 · 電氣配置</span>
+                  <span>LED燈條、阻燃線</span>
+                  <span>分區低壓恆流排線</span>
+                  <span>IP65 防水絕緣認證</span>
+                  <span>約 5-10 天</span>
+                  <span>均勻發光無陰暗死角</span>
+                </div>
+              </div>
+              <a class="team-name" href="#!">
+                <h5 class="text-uppercase mb-0">參 · 電氣安裝配線</h5>
+                <small>點亮心臟 · 均光安全迴路</small>
+              </a>
+            </div>
+          </div>
+
+          <!-- 工序 4 -->
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="team-item">
+              <div class="team-body">
+                <div class="team-before">
+                  <span>工序階段</span>
+                  <span>核心材料</span>
+                  <span>關鍵工法</span>
+                  <span>張力控制</span>
+                  <span>作業耗時</span>
+                  <span>品質標準</span>
+                </div>
+                <img class="img-fluid" src="img/team-4.jpg" alt="第四道工序：表布緊繃與精工裱糊" />
+                <div class="team-after">
+                  <span>肆 · 表布裱糊</span>
+                  <span>彈性透光綢布</span>
+                  <span>特製耐候乳膠黏著</span>
+                  <span>均勻拉伸貼合骨架</span>
+                  <span>約 12-20 天</span>
+                  <span>平整光潔零褶皺</span>
+                </div>
+              </div>
+              <a class="team-name" href="#!">
+                <h5 class="text-uppercase mb-0">肆 · 表布緊繃裱糊</h5>
+                <small>巧施剪黏 · 宛若凝脂肌膚</small>
+              </a>
+            </div>
+          </div>
+
+          <!-- 工序 5 -->
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="team-item">
+              <div class="team-body">
+                <div class="team-before">
+                  <span>工序階段</span>
+                  <span>核心材料</span>
+                  <span>關鍵工法</span>
+                  <span>色彩表現</span>
+                  <span>作業耗時</span>
+                  <span>品質標準</span>
+                </div>
+                <img class="img-fluid" src="img/team-5.jpg" alt="第五道工序：彩繪噴染與細部描金" />
+                <div class="team-after">
+                  <span>伍 · 彩繪噴染</span>
+                  <span>耐候抗UV壓克力漆</span>
+                  <span>精細氣刷漸層渲染</span>
+                  <span>五彩斑斕層次分明</span>
+                  <span>約 7-15 天</span>
+                  <span>日看如生、夜看通透</span>
+                </div>
+              </div>
+              <a class="team-name" href="#!">
+                <h5 class="text-uppercase mb-0">伍 · 彩繪噴染描金</h5>
+                <small>點石成金 · 氣刷神韻繪製</small>
+              </a>
+            </div>
+          </div>
+
+          <!-- 工序 6 -->
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="team-item">
+              <div class="team-body">
+                <div class="team-before">
+                  <span>工序階段</span>
+                  <span>核心材料</span>
+                  <span>關鍵工法</span>
+                  <span>科技整合</span>
+                  <span>作業耗時</span>
+                  <span>品質標準</span>
+                </div>
+                <img class="img-fluid" src="img/team-6.jpg" alt="第六道工序：全燈調光與整體動態試點" />
+                <div class="team-after">
+                  <span>陸 · 組裝試點</span>
+                  <span>DMX512控台、感應器</span>
+                  <span>全負載72小時燒機</span>
+                  <span>音樂節奏聲光同步</span>
+                  <span>約 5-8 天</span>
+                  <span>聲光共振震撼全場</span>
+                </div>
+              </div>
+              <a class="team-name" href="#!">
+                <h5 class="text-uppercase mb-0">陸 · 組裝光控試點</h5>
+                <small>登峰造極 · 光影躍然生動</small>
+              </a>
+            </div>
+          </div>
+
+          <!-- 守則 7 -->
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="team-item">
+              <div class="team-body">
+                <div class="team-before">
+                  <span>規範領域</span>
+                  <span>氣候抗禦</span>
+                  <span>結構負載</span>
+                  <span>阻燃規範</span>
+                  <span>防漏電</span>
+                  <span>品質標準</span>
+                </div>
+                <img class="img-fluid" src="img/team-7.jpg" alt="第七項守則：極端天候防護安全標準" />
+                <div class="team-after">
+                  <span>柒 · 耐候驗收</span>
+                  <span>防強陣風、大豪雨</span>
+                  <span>配重抗傾倒計算</span>
+                  <span>CNS防焰一級表布</span>
+                  <span>雙重漏電斷路保護</span>
+                  <span>戶外展出萬無一失</span>
+                </div>
+              </div>
+              <a class="team-name" href="#!">
+                <h5 class="text-uppercase mb-0">柒 · 戶外耐候安全檢驗</h5>
+                <small>嚴謹檢測 · 確保萬民平安</small>
+              </a>
+            </div>
+          </div>
+
+          <!-- 守則 8 -->
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="team-item">
+              <div class="team-body">
+                <div class="team-before">
+                  <span>評核標準</span>
+                  <span>傳統精髓</span>
+                  <span>創新突破</span>
+                  <span>師徒傳授</span>
+                  <span>典藏價值</span>
+                  <span>文化象徵</span>
+                </div>
+                <img class="img-fluid" src="img/team-8.jpg" alt="第八項守則：無形文化資產保存評核" />
+                <div class="team-after">
+                  <span>捌 · 傳承鑑定</span>
+                  <span>手作溫度與典故</span>
+                  <span>複合媒材跨界應用</span>
+                  <span>技藝口訣世代傳授</span>
+                  <span>獲國家級博覽會珍藏</span>
+                  <span>百花齊放文化象徵</span>
+                </div>
+              </div>
+              <a class="team-name" href="#!">
+                <h5 class="text-uppercase mb-0">捌 · 文化資產傳承認證</h5>
+                <small>薪火相傳 · 銘刻歷史典範</small>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 6 Major Stages End -->
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5 bg-dark">
+      <div class="container py-5">
+        <div class="text-center">
+          <div class="title wow fadeInUp" data-wow-delay="0.1s">
+            <div class="title-center">
+              <h5>APPRENTICE REFLECTIONS</h5>
+              <h1>工坊學徒與藝師心聲</h1>
+            </div>
+          </div>
+        </div>
+        <div
+          class="owl-carousel testimonial-carousel wow fadeInUp"
+          data-wow-delay="0.3s"
+        >
+          <div
+            class="testimonial-item text-center"
+            data-dot="<img class='img-fluid' src='img/testimonial-1.jpg' alt='學徒心得'>"
+          >
+            <p class="fs-5 text-light mb-4">
+              「剛開始學扎骨架時，手被鐵絲磨破是家常便飯。師傅告訴我：『一根鐵絲如果偷懶少焊一個點，整隻龍的龍爪就沒有力氣。』這份對細節的敬畏，就是花燈能流傳百年的靈魂。」
+            </p>
+            <h5 class="text-uppercase text-white">陳冠廷 青年工藝師</h5>
+            <span class="text-primary">傳承工坊第三代入室學徒</span>
+          </div>
+          <div
+            class="testimonial-item text-center"
+            data-dot="<img class='img-fluid' src='img/testimonial-2.jpg' alt='裱糊師心得'>"
+          >
+            <p class="fs-5 text-light mb-4">
+              「裱布是一場耐心的修煉。布拉太緊骨架會變形，拉太鬆在燈光下會形成陰影。每次看到自己裱好的布在通電試燈的那一剎那發出柔和通透的光澤，所有的辛苦都化為欣慰。」
+            </p>
+            <h5 class="text-uppercase text-white">黃美玲 裱糊資深師傅</h5>
+            <span class="text-primary">工坊裱糊彩繪組組長</span>
+          </div>
+          <div
+            class="testimonial-item text-center"
+            data-dot="<img class='img-fluid' src='img/testimonial-3.jpg' alt='光雕工程師心得'>"
+          >
+            <p class="fs-5 text-light mb-4">
+              「將傳統花燈結合現代物聯網與動態調光，是一次跨越世紀的對話。我們不是要取代傳統，而是用科技當畫筆，為老祖宗留下來的燈藝穿上當代最璀璨的光影衣裳！」
+            </p>
+            <h5 class="text-uppercase text-white">鄭永勝 技術總監</h5>
+            <span class="text-primary">燈會光電控制資深工程師</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial End -->
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container text-center py-5">
-            <a href="index.html">
-                <h1 class="display-4 mb-3 text-white text-uppercase"><i
-                        class="fa-regular fa-face-smile me-1"></i>Poseify</h1>
-            </a>
-            <div class="d-flex justify-content-center mb-4">
-                <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#!"><i
-                        class="fab fa-x-twitter"></i></a>
-                <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#!"><i
-                        class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#!"><i
-                        class="fab fa-youtube"></i></a>
-                <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#!"><i
-                        class="fab fa-linkedin-in"></i></a>
-            </div>
-            <p>&copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.</p>
-
-            <!--/*** The author’s attribution link must remain intact in the template. ***/-->
-            <!--/*** If you wish to remove this credit link, please purchase the Pro Version . ***/-->
-            <p class="mb-0">Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>.
-                Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>.</p>
-            </p>
+    <div
+      class="container-fluid bg-dark text-light footer py-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container text-center py-5">
+        <a href="index.html">
+          <h1 class="display-4 mb-3 text-white">
+            <i class="fa-solid fa-fire-flame-curved text-primary me-2"></i>百「花」齊放 「燈」峰造極
+          </h1>
+        </a>
+        <p class="text-light mb-4 mx-auto" style="max-width: 650px;">
+          致力於傳承與推廣臺灣傳統花燈工藝，展現竹塹風華與當代聲光科技的美學結晶。讓薪火代代相傳，點亮世界每一個角落。
+        </p>
+        <div class="d-flex justify-content-center mb-4 gap-2">
+          <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#!" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="#!" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a class="btn btn-lg-square btn-outline-primary border-2 m-1" href="contact.html" aria-label="聯絡我們"><i class="fa-solid fa-envelope"></i></a>
         </div>
+        <p class="mb-2">
+          &copy; <a class="border-bottom" href="index.html">百「花」齊放 「燈」峰造極 花燈文化推廣網</a>. All Rights Reserved.
+        </p>
+        <p class="mb-0 text-muted small">
+          指導單位：文化部傳統工藝推廣計畫 | 專題策劃：臺灣燈藝文化研究團隊
+        </p>
+      </div>
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
-    <a href="#" class="btn btn-outline-primary border-2 btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
+    <a
+      href="#"
+      class="btn btn-primary border-2 btn-lg-square back-to-top"
+      aria-label="回到頁首"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -438,6 +543,5 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>

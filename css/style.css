@@ -1,15 +1,86 @@
-/********** Template CSS **********/
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;600;700;900&display=swap');
 
+/********** 全站核心變數與東方燈藝配色 **********/
+:root {
+    --bs-primary: #f59e0b;          /* 暖金燈火黃 */
+    --bs-primary-rgb: 245, 158, 11;
+    --bs-secondary: #141824;        /* 靜謐夜空藍黑 */
+    --bs-secondary-rgb: 20, 24, 36;
+    --bs-dark: #0a0d14;             /* 萬籟寂靜黑 */
+    --bs-dark-rgb: 10, 13, 20;
+    --bs-light: #d1d5db;
+    --bs-light-rgb: 209, 213, 219;
+    --bs-white: #ffffff;
+    --lantern-gold: #ffb703;        /* 琉璃金光 */
+    --lantern-red: #e63946;         /* 宮燈朱紅 */
+    --lantern-amber: #fb8500;       /* 燃燈琥珀 */
+    --lantern-glow: 0 0 25px rgba(245, 158, 11, 0.45);
+    --lantern-red-glow: 0 0 25px rgba(230, 57, 70, 0.4);
+}
+
+body {
+    background-color: var(--bs-dark);
+    color: #cbd5e1;
+    font-family: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Microsoft JhengHei", sans-serif;
+    letter-spacing: 0.02em;
+    line-height: 1.8;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.display-1, .display-2, .display-3, .display-4 {
+    font-family: 'Noto Serif TC', "Songti TC", "Source Han Serif TC", serif;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.05em;
+}
+
+/* 典雅書法輔助字體 */
+.font-calligraphy {
+    font-family: 'Ma Shan Zheng', 'Noto Serif TC', cursive, serif !important;
+}
+
+/* 覆蓋 Bootstrap 預設強調色 */
+.text-primary {
+    color: var(--bs-primary) !important;
+}
+
+.text-danger-festive {
+    color: var(--lantern-red) !important;
+}
+
+.bg-primary {
+    background-color: var(--bs-primary) !important;
+}
+
+.bg-secondary {
+    background-color: var(--bs-secondary) !important;
+}
+
+.bg-dark {
+    background-color: var(--bs-dark) !important;
+}
+
+.border-primary {
+    border-color: var(--bs-primary) !important;
+}
+
+.border-secondary {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/*** 回頂端按鈕 ***/
 .back-to-top {
     position: fixed;
     display: none;
-    right: 45px;
-    bottom: 45px;
+    right: 35px;
+    bottom: 35px;
     z-index: 99;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(245, 158, 11, 0.5);
 }
 
-
-/*** Spinner ***/
+/*** 載入動畫 Spinner ***/
 #spinner {
     opacity: 0;
     visibility: hidden;
@@ -23,12 +94,13 @@
     opacity: 1;
 }
 
-
-/*** Button ***/
+/*** 按鈕樣式 Button ***/
 .btn {
+    font-family: 'Noto Sans TC', sans-serif;
     font-weight: 600;
-    transition: .5s;
+    transition: all .4s ease;
     border-radius: 50px;
+    letter-spacing: 0.05em;
 }
 
 .btn-square {
@@ -57,45 +129,103 @@
 }
 
 .btn-primary {
-    color: var(--bs-white);
+    color: #0b0f19 !important;
+    background: linear-gradient(135deg, #ffb703 0%, #f59e0b 100%) !important;
+    border: none !important;
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.35);
 }
 
+.btn-primary:hover {
+    color: #000000 !important;
+    background: linear-gradient(135deg, #f59e0b 0%, #fb8500 100%) !important;
+    box-shadow: 0 6px 20px rgba(245, 158, 11, 0.55);
+    transform: translateY(-2px);
+}
 
-/*** Navbar ***/
+.btn-outline-primary {
+    color: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--bs-primary) !important;
+    border-color: var(--bs-primary) !important;
+    color: #0b0f19 !important;
+    box-shadow: var(--lantern-glow);
+    transform: translateY(-2px);
+}
+
+/*** 導覽列 Navbar ***/
 .navbar {
     position: absolute;
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 9;
+    z-index: 99;
     transition: .5s;
+    background: linear-gradient(to bottom, rgba(10, 13, 20, 0.95), rgba(10, 13, 20, 0.6) 80%, transparent);
+    backdrop-filter: blur(8px);
+}
+
+.navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-brand h2 {
+    font-size: 1.55rem;
+    margin: 0;
+    letter-spacing: 0.08em;
 }
 
 .navbar .navbar-nav .nav-link {
-    margin-right: 25px;
-    padding: 40px 0;
-    color: var(--bs-white);
-    font-size: 17px;
-    text-transform: uppercase;
+    margin-right: 22px;
+    padding: 35px 0;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 16px;
+    font-weight: 500;
     outline: none;
-    transition: .5s;
+    transition: .4s;
+    position: relative;
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
     color: var(--bs-primary);
+    text-shadow: 0 0 10px rgba(245, 158, 11, 0.6);
+}
+
+.navbar .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: var(--bs-primary);
+    transition: width .3s ease;
+}
+
+.navbar .navbar-nav .nav-link:hover::after,
+.navbar .navbar-nav .nav-link.active::after {
+    width: 60%;
 }
 
 @media (max-width: 991.98px) {
+    .navbar {
+        background: rgba(10, 13, 20, 0.98);
+    }
+
     .navbar .navbar-nav .nav-link,
     .navbar.bg-dark .navbar-nav .nav-link {
         margin-right: 0;
-        padding: 10px 0;
+        padding: 12px 0;
     }
 
     .navbar .navbar-nav {
         margin-top: 8px;
-        border-top: 1px solid var(--bs-light);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
 }
 
@@ -104,22 +234,52 @@
         padding: 20px 0;
     }
 
+    .navbar.position-fixed {
+        background: rgba(10, 13, 20, 0.96) !important;
+        border-bottom: 1px solid rgba(245, 158, 11, 0.25);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6) !important;
+    }
+
+    .navbar.position-fixed .navbar-nav .nav-link {
+        padding: 20px 0;
+    }
+
+    .navbar.position-fixed .navbar-nav .nav-link::after {
+        bottom: 12px;
+    }
+
     .navbar .nav-item .dropdown-menu {
         display: block;
-        border: none;
+        background: rgba(20, 24, 36, 0.98);
+        border: 1px solid rgba(245, 158, 11, 0.3);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        border-radius: 8px;
         margin-top: 0;
         top: 150%;
         opacity: 0;
         visibility: hidden;
-        transition: .5s;
+        transition: .4s;
     }
 
     .navbar .nav-item:hover .dropdown-menu {
         top: 100%;
         visibility: visible;
-        transition: .5s;
+        transition: .4s;
         opacity: 1;
     }
+}
+
+.dropdown-item {
+    color: #cbd5e1;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.dropdown-item:hover {
+    color: #ffffff;
+    background: rgba(245, 158, 11, 0.2);
+    padding-left: 25px;
 }
 
 .navbar .dropdown-toggle::after {
@@ -128,36 +288,49 @@
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     vertical-align: middle;
-    margin-left: 8px;
+    margin-left: 6px;
+    font-size: 12px;
 }
 
-
-/*** Header ***/
+/*** 首頁輪播 Header Carousel ***/
 .carousel-caption {
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    padding-top: 100px;
-    background: rgba(0, 0, 0, .7);
+    padding-top: 110px;
+    background: radial-gradient(circle at center, rgba(10, 13, 20, 0.6) 0%, rgba(10, 13, 20, 0.88) 100%);
     z-index: 1;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-    width: 10%;
+    width: 8%;
+    opacity: 0.6;
+    transition: .4s;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     width: 3rem;
     height: 3rem;
+    background-color: rgba(20, 24, 36, 0.6);
+    border-radius: 50%;
+    border: 1px solid rgba(245, 158, 11, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (max-width: 768px) {
     #header-carousel .carousel-item {
         position: relative;
-        min-height: 550px;
+        min-height: 580px;
     }
     
     #header-carousel .carousel-item img {
@@ -169,26 +342,35 @@
 }
 
 .page-header {
-    padding-top: 200px;
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/carousel-1.jpg) top center no-repeat;
+    padding-top: 190px;
+    padding-bottom: 60px;
+    background: linear-gradient(rgba(10, 13, 20, 0.85), rgba(10, 13, 20, 0.95)), url(../img/carousel-1.jpg) top center no-repeat;
     background-size: cover;
+    border-bottom: 2px solid rgba(245, 158, 11, 0.3);
 }
 
 .page-header .breadcrumb-item + .breadcrumb-item::before {
-    color: var(--bs-white);
+    color: var(--bs-primary);
 }
 
+.breadcrumb-item a {
+    color: rgba(255, 255, 255, 0.7);
+    transition: .3s;
+}
 
-/*** Title ***/
+.breadcrumb-item a:hover {
+    color: var(--bs-primary);
+}
+
+/*** 區塊標題 Title ***/
 .title {
-    margin-bottom: 2rem;
+    margin-bottom: 2.2rem;
 }
 
 .title .title-left,
 .title .title-center,
 .title .title-right {
     display: inline-block;
-    text-transform: uppercase;
     overflow: hidden;
 }
 
@@ -205,8 +387,11 @@
 .title .title-right h5 {
     position: relative;
     display: inline-block;
-    font-size: 18px;
-    font-weight: 300;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--bs-primary);
+    letter-spacing: 0.15em;
+    margin-bottom: 8px;
 }
 
 .title .title-left h5::after,
@@ -215,10 +400,10 @@
 .title .title-right h5::before {
     position: absolute;
     content: "";
-    width: 500%;
+    width: 300%;
     height: 0;
-    top: 9px;
-    border-bottom: 1px solid var(--bs-white);
+    top: 10px;
+    border-bottom: 1px solid rgba(245, 158, 11, 0.4);
 }
 
 .title .title-left h5::after,
@@ -234,15 +419,26 @@
 .title .title-left h1,
 .title .title-center h1,
 .title .title-right h1 {
-    border-bottom: 1px solid var(--bs-white);
+    font-size: calc(1.6rem + 1.2vw);
+    border-bottom: 2px solid rgba(245, 158, 11, 0.5);
+    padding-bottom: 12px;
+    display: inline-block;
+    text-shadow: 0 0 15px rgba(245, 158, 11, 0.25);
 }
 
-
-/*** Service ***/
+/*** 特色服務 / 故事單元 Service ***/
 .service-item {
     position: relative;
-    margin-top: 2.5rem;
+    margin-top: 3rem;
     overflow: hidden;
+    border: 1px solid rgba(245, 158, 11, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    transition: transform .4s ease, border-color .4s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    border-color: rgba(245, 158, 11, 0.5);
 }
 
 .service-item .service-img {
@@ -258,46 +454,80 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 3rem solid rgba(0, 0, 0, .5);
+    border: 2px solid rgba(245, 158, 11, 0.4);
     border-radius: 300px;
     z-index: 1;
+    pointer-events: none;
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.25);
 }
 
 .service-item.service-item-left {
-    border-radius: 500px 0 0 500px;
-    background: linear-gradient(to right, var(--bs-secondary), var(--bs-dark));
+    border-radius: 500px 20px 20px 500px;
+    background: linear-gradient(135deg, rgba(20, 24, 36, 0.95), rgba(10, 13, 20, 0.95));
 }
 
 .service-item.service-item-right {
-    border-radius: 0 500px 500px 0;
-    background: linear-gradient(to left, var(--bs-secondary), var(--bs-dark));
+    border-radius: 20px 500px 500px 20px;
+    background: linear-gradient(225deg, rgba(20, 24, 36, 0.95), rgba(10, 13, 20, 0.95));
 }
 
 @media (max-width: 767.98px) {
     .service-item.service-item-left,
     .service-item.service-item-right {
-        border-radius: 500px 500px 0 0;
+        border-radius: 24px;
         background: linear-gradient(to bottom, var(--bs-secondary), var(--bs-dark));
         text-align: center;
     }
 }
 
-
-/*** Team ***/
+/*** 名師與經典展品 Team / Lantern Masters ***/
 .team-item {
     position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: var(--bs-secondary);
+    transition: all .4s ease;
+}
+
+.team-item:hover {
+    border-color: var(--bs-primary);
+    box-shadow: 0 10px 25px rgba(245, 158, 11, 0.25);
+    transform: translateY(-6px);
 }
 
 .team-item .team-name {
     position: absolute;
     width: 100%;
-    height: 60px;
+    min-height: 65px;
     left: 0;
     bottom: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, .7);
+    background: linear-gradient(to top, rgba(10, 13, 20, 0.95), rgba(10, 13, 20, 0.75));
+    border-top: 1px solid rgba(245, 158, 11, 0.3);
+    padding: 8px 12px;
+    text-decoration: none;
+    z-index: 2;
+}
+
+.team-item .team-name h5 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin: 0;
+    transition: .3s;
+}
+
+.team-item:hover .team-name h5 {
+    color: var(--bs-primary);
+}
+
+.team-item .team-name small {
+    color: var(--bs-primary);
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
 }
 
 .team-item .team-body {
@@ -305,19 +535,32 @@
     overflow: hidden;
 }
 
+.team-item .team-body img {
+    transition: transform .6s ease;
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+
+.team-item:hover .team-body img {
+    transform: scale(1.08);
+}
+
 .team-item .team-body .team-before,
 .team-item .team-body .team-after {
     position: absolute;
     content: "";
     width: 0;
-    height: calc(100% - 60px);
+    height: calc(100% - 65px);
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, .7);
+    background: rgba(10, 13, 20, 0.88);
+    backdrop-filter: blur(4px);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transition: .5s;
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: 1;
 }
 
 .team-item .team-body .team-after {
@@ -327,6 +570,12 @@
 
 .team-item .team-body .team-before {
     text-align: right;
+    padding-right: 12px;
+}
+
+.team-item .team-body .team-after {
+    text-align: left;
+    padding-left: 12px;
 }
 
 .team-item:hover .team-body .team-before,
@@ -336,73 +585,172 @@
 
 .team-item .team-body .team-before span,
 .team-item .team-body .team-after span {
-    margin: 5px;
-    color: var(--bs-white);
+    margin: 4px 0;
+    color: var(--bs-light);
+    font-size: 0.88rem;
     opacity: 0;
-    transition: .5s;
+    transition: .3s;
+    white-space: nowrap;
+}
+
+.team-item .team-body .team-before span {
+    color: var(--bs-primary);
+    font-weight: 600;
 }
 
 .team-item:hover .team-body .team-before span,
 .team-item:hover .team-body .team-after span {
     opacity: 1;
-    transition-delay: .2s;
+    transition-delay: .15s;
 }
 
-
-/*** Testimonial ***/
+/*** 名家迴響 Testimonial ***/
 .testimonial-carousel {
-    max-width: 700px;
+    max-width: 780px;
     margin: 0 auto;
 }
 
+.testimonial-item {
+    background: rgba(10, 13, 20, 0.6);
+    padding: 35px;
+    border-radius: 16px;
+    border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
 .testimonial-carousel .owl-dots {
-    margin-top: 35px;
-    height: 100px;
+    margin-top: 30px;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .testimonial-carousel .owl-dots .owl-dot {
-    width: 60px;
-    height: 60px;
-    margin: 0 5px;
-    padding: 10px;
+    width: 55px;
+    height: 55px;
+    margin: 0 6px;
+    padding: 6px;
     background: var(--bs-dark);
-    border-radius: 100px;
-    transition: .5s;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: .4s;
 }
 
 .testimonial-carousel .owl-dots .owl-dot.active {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 15px rgba(245, 158, 11, 0.5);
 }
 
 .testimonial-carousel .owl-dots .owl-dot img {
-    opacity: .1;
-    transition: .5s;
-    border-radius: 100px;
+    opacity: .35;
+    transition: .4s;
+    border-radius: 50%;
 }
 
 .testimonial-carousel .owl-dots .owl-dot.active img {
     opacity: 1;
 }
 
-
-/*** Footer ***/
+/*** 頁尾 Footer ***/
 @keyframes footerAnimatedBg {
 	0% {
         background-position: 0 0;
     }
-
 	100% {
         background-position: -1000px 0;
     }
 }
 
 .footer {
+	background-color: #07090f;
 	background-image: url(../img/footer-bg.png);
 	background-position: 0px 0px;
     background-repeat: repeat-x;
-	animation: footerAnimatedBg 50s linear infinite;
+	animation: footerAnimatedBg 60s linear infinite;
+    border-top: 2px solid rgba(245, 158, 11, 0.25);
+}
+
+.footer a.border-bottom {
+    color: var(--bs-primary);
+    border-color: rgba(245, 158, 11, 0.4) !important;
+}
+
+.footer a.border-bottom:hover {
+    color: #ffffff;
+    border-color: #ffffff !important;
+}
+
+/*** 燈謎互動與專題自訂元件 Custom Lantern Components ***/
+.lantern-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #e63946, #c1121f);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 6px rgba(230, 57, 70, 0.4);
+    letter-spacing: 0.05em;
+}
+
+.craft-card {
+    background: rgba(20, 24, 36, 0.85);
+    border: 1px solid rgba(245, 158, 11, 0.2);
+    border-radius: 12px;
+    padding: 30px;
+    height: 100%;
+    transition: all .35s ease;
+}
+
+.craft-card:hover {
+    border-color: var(--bs-primary);
+    box-shadow: var(--lantern-glow);
+    transform: translateY(-5px);
+}
+
+.craft-step-number {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, var(--bs-primary), var(--lantern-amber));
+    color: #000;
+    font-weight: 900;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
+}
+
+.riddle-card {
+    background: linear-gradient(135deg, rgba(30, 24, 20, 0.95), rgba(15, 18, 28, 0.95));
+    border: 1px dashed rgba(245, 158, 11, 0.5);
+    border-radius: 12px;
+    padding: 24px;
+    position: relative;
+    transition: .3s;
+}
+
+.riddle-card:hover {
+    border-style: solid;
+    border-color: var(--bs-primary);
+    box-shadow: 0 6px 20px rgba(245, 158, 11, 0.25);
+}
+
+.riddle-answer {
+    display: none;
+    transition: all .3s;
+}
+
+.riddle-card:hover .riddle-answer {
+    display: block;
+}
+
+.glow-text {
+    text-shadow: 0 0 12px rgba(245, 158, 11, 0.55);
 }
